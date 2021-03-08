@@ -1,6 +1,6 @@
 package br.com.zup.payment
 
-import br.com.zup.StatusConversion
+import br.com.zup.shared.StatusConversion
 import br.com.zup.gateway.PaymentServiceGrpc
 import br.com.zup.gateway.Status
 import com.google.protobuf.Any
