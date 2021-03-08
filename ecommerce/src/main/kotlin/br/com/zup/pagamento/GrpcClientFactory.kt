@@ -1,4 +1,4 @@
-package br.com.zup.payment
+package br.com.zup.pagamento
 
 import br.com.zup.gateway.PaymentServiceGrpc
 import io.grpc.ManagedChannel

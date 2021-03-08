@@ -10,6 +10,10 @@ plugins {
     id("com.google.protobuf") version "0.8.13"
 }
 
+allOpen {
+    annotation("io.micronaut.http.annotation.Controller")
+}
+
 version = "0.1"
 group = "br.com.zup"
 

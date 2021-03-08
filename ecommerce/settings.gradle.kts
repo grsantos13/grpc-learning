@@ -1,1 +1,1 @@
-rootProject.name="mercadolivre"
+rootProject.name="ecommerce"

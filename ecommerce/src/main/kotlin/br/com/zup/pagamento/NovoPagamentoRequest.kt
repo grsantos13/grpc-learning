@@ -1,10 +1,10 @@
-package br.com.zup.payment
+package br.com.zup.pagamento
 
 import br.com.zup.gateway.PaymentRequest
 import io.micronaut.core.annotation.Introspected
 
 @Introspected
-data class PaymentRequest(
+data class NovoPagamentoRequest(
     val numero: String,
     val titular: String,
     val cvv: String
