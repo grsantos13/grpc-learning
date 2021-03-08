@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "br.com.zup.gateway";
+option java_outer_classname = "Paymentgateway";
+option objc_class_prefix = "HLW";
+
+package br.com.zup.gateway;
+
+service PaymentService {
+  rpc pay (PaymentRequest) returns (PaymentResponse) {}
+}
+
+enum Status {
+  UNKNOWN_ERROR = 0;
+  SUCESSO = 1;
+  SALDO_INSUFICIENTE = 2;
+  DADOS_INCORRETOS = 3;
+}
+
+message PaymentRequest {
+  string cartao = 1;
+  string titular = 2;
+  string dv = 3;
+  double valor = 4;
+}
+
+message PaymentResponse {
+  Status status = 1;
+}
